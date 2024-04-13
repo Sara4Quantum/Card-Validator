@@ -1,0 +1,44 @@
+/* Custom CSS to style the form */
+body {
+ 
+  background-size: cover; /* This property ensures the image covers the entire background */
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto; /* Center the container horizontally */
+  padding-top: 20px; /* Example top padding */
+  padding-bottom: 30px; /* Example bottom padding */
+  padding-left: 75px; /* Example left padding */
+  padding-right: 75px; /* Example right padding */
+}
+.form-group {
+  margin-bottom: 20px;
+}
+label {
+  font-weight: bold;
+  font-size: 18px; /* Increased font size */
+}
+.error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 16px; /* Increased font size */
+  font-weight: bold; /* Bold font style */
+}
+/* Custom CSS to style the form control */
+input.form-control {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 24px; /* Increased padding */
+  font-size: 17.6px; /* Increased font size */
+}
+input.form-control.is-invalid {
+  border-color: red; /* Dark red color */
+}
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  font-size: 18px; /* Increased font size */
+}
+.btn-primary:hover {
+  background-color: green;
+}

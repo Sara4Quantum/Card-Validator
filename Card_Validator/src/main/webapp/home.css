@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; /* Light blue background */
+}
+
+header {
+  background-color: #007bff; /* Dark blue header background */
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 55px; /* Increased font size */
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.validator-box {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: #fff; /* White box background */
+  border: 2px solid #007bff; /* Dark blue border */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.validator-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.validator-box h2 {
+  font-size: 35px; /* Increased font size */
+  margin-bottom: 20px;
+  color: #1C1C1C; /* Change font color here */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.validator-box a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px; /* Decreased font size */
+  padding: 10px 20px; /* Adjusted padding */
+  border-radius: 10px;
+  background-color: #007bff;
+  transition: background-color 0.1s ease-in-out;
+  margin-top: 10px;
+}
+
+.validator-box a:hover {
+  background-color: #00A400; /* Darker blue on hover */
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.disclaimer {
+  font-size: 16.5px; /* Increased font size */
+  background-color: #f8d7da; /* Red background for error */
+  color: #721c24; /* Dark red text color */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.disclaimer.warning {
+  background-color: #fff3cd; /* Yellow background for warning */
+  color: #856404; /* Dark yellow text color */
+}

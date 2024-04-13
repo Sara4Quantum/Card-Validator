@@ -1,0 +1,56 @@
+body {
+   
+  background-size: cover;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input.form-control {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 17px;
+  font-size: 25px;
+}
+
+input.form-control.is-invalid {
+  border-color: red;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  font-size: 18px;
+}
+
+.btn-primary:hover {
+  background-color: green;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 75px;
+  font-weight: bold;
+}

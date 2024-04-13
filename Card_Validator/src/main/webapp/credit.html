@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit or Debit Card Validation</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="credit.css" rel="stylesheet">
+</head>
+<body>
+<h1>Credit / Debit Card Validator</h1> 
+
+<div class="container">
+  <form class="needs-validation" novalidate id="creditCardForm" action="CreditDebitCard">
+    <div class="form-group">
+      <label for="cardNumber">Credit / Debit Card Number:</label>
+      <input type="text" class="form-control" id="digit" name="digit" placeholder="Enter 16-digit card number" required pattern="\d{16}" maxlength="19">
+      <div class="invalid-feedback">
+        <!-- Error message for less than 16 digits -->
+      </div>
+      <div class="error-message" id="cardNumberErrorMessage"></div> <!-- Error message for less than 16 digits -->
+    </div>
+    <div class="text-center"> <!-- Center the button -->
+      <button class="btn btn-primary mt-4" type="submit"><h5>Validate Card</h5></button>
+    </div>
+  </form>
+</div>
+
+<script src="credit.js"></script>
+</body>
+</html>

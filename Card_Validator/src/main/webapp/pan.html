@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pan Card Validation</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="pan.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Pan Card Validator</h1>
+    <form class="needs-validation" novalidate id="panCardForm" action="PanCardValidation">
+      <div class="form-group">
+        <label for="PanNo">Pan Number:</label>
+        <input type="text" class="form-control" id="PanNo" name="PanNo" placeholder="Enter Pan Number" required pattern="[A-Za-z0-9]{10}">
+        <div class="error-message" id="panNumberErrorMessage"></div>
+      </div>
+      <div class="form-group">
+        <label for="UserPanName">Pan Holder Name:</label>
+        <input type="text" class="form-control" id="UserPanName" name="UserPanName" placeholder="Enter Pan holder's Last name / Surname" required pattern="[A-Za-z ]+">
+        <div class="error-message" id="panHolderNameErrorMessage"></div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-primary mt-4" type="submit"><h5>Validate Pan Card</h5></button>
+      </div>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="pan.js"></script>
+</body>
+</html>
